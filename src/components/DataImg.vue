@@ -6,11 +6,13 @@ export default defineComponent({
     header: String,
     text: String,
     btnText: String,
-    extraBten: Boolean,
-    imgSrc: String,
-    imgAlt: String,
+    extraBtn: Boolean,
     className: String,
-    sectionName: String
+    sectionName: String,
+    mediaComponent: {
+      type: Object,
+      required: true
+    }
   },
 
 })
@@ -19,13 +21,13 @@ export default defineComponent({
 
 <template>
   <section :class="sectionName">
-    <div :class="className">
+    <div :class='`${className} texts`'>
       <h2>{{ header }}</h2>
       <p>{{ text }}</p>
       <button class="btn">{{ btnText }}</button>
     </div>
     <div>
-      <!-- <img :src="require(imgSrc)" :alt="imgAlt" /> -->
+      <component :is="mediaComponent" />
     </div>
   </section>
 </template>
@@ -44,6 +46,10 @@ section.no-pb {
 
 section div {
   width: 50%;
+
+}
+
+.texts {
   display: grid;
   gap: 2.3rem;
   justify-content: center;
