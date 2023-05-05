@@ -5,6 +5,10 @@ import DataImg from './components/DataImg.vue';
 import Footer from './components/Footer.vue';
 import RewardTokens from './components/RewardTokens.vue';
 import Social from './components/Social.vue';
+
+import Cards from './components/media/Cards.vue'
+import Cube from './components/media/Cube.vue'
+import Map from './components/media/Map.vue'
 </script>
 
 <template>
@@ -32,7 +36,7 @@ import Social from './components/Social.vue';
 
     <DataImg header="Earn & claim cash with Reward.io by participating in real-time tasks and learning crypto."
       text="Connect to our DEX service and contribute to earn crypto & cash seamlessly. Anyone can earn crypto by learning how to use blockchain products and completing real-time tasks."
-      btnText="Get Started" imgSrc="../assets/vid.gif" sectionName="no-pb" />
+      btnText="Get Started" imgSrc="../assets/vid.gif" sectionName="no-pb" :mediaComponent="Cube" />
     <div class="box">
       <span>Questions? Talk to an expert <img src="./assets/arrow-right.svg" alt="right arrow "></span>
       <div class="scroll">
@@ -45,10 +49,10 @@ import Social from './components/Social.vue';
   <Banner />
   <DataImg header="Participate with other users around the world with wide coverage for task."
     text="Our platform reaches people all over the world, we will help you in growing your knowledge about the crypto space and earn at the same time. Complete quests to earn experience points, skill points and guild coin tokens."
-    btnText="Play Now" />
+    btnText="Play Now" :mediaComponent="Map" />
   <DataImg header="A better and smarter wallet to help secure your earned tokens as you learn."
     text="Our platform provides maximum security for our users through a safe transaction security, unique smart wallet card and embedded fintech experience to help you grow."
-    btnText="Create Wallet" className="right" />
+    btnText="Create Wallet" className="right" :mediaComponent="Cards" />
   <RewardTokens />
   <Social />
   <Contact />
