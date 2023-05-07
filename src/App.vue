@@ -117,9 +117,9 @@ button {
 
 .home {
   height: 95vh;
+  min-height: 800px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
