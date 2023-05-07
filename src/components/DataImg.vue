@@ -3,7 +3,10 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   props: {
-    header: String,
+    header: {
+      type: Object,
+      required: true
+    },
     text: String,
     btnText: String,
     extraBtn: Boolean,
@@ -22,11 +25,11 @@ export default defineComponent({
 <template>
   <section :class="sectionName">
     <div :class='`${className} texts`'>
-      <h2>{{ header }}</h2>
+      <component :is="header" />
       <p>{{ text }}</p>
       <button class="btn">{{ btnText }}</button>
     </div>
-    <div>
+    <div class="media">
       <component :is="mediaComponent" />
     </div>
   </section>
@@ -59,12 +62,17 @@ section div {
   order: 2;
 }
 
-/* h2 {
-  font-size: 2.3rem;
-  line-height: 1.5;
-  padding-bottom: 1rem;
-} */
+/* @media screen and (max-width: 1024px) {
+  section {
+    flex-direction: column;
+  }
 
-/* p {
-  font-weight: 300;
-} */</style>
+  section div {
+    width: 100%;
+  }
+
+  .texts {
+    order: 2;
+  }
+} */
+</style>

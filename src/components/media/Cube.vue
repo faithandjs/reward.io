@@ -1,8 +1,5 @@
 <template>
-  <img src="../../assets/vid.gif" alt="">
+  <div>
+    <img src="../../assets/vid.gif" alt="">
+  </div>
 </template>
-<style scoped>
-img {
-  margin-left: 100px;
-}
-</style>

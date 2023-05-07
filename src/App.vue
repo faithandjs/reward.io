@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import Banner from './components/Banner.vue';
 import Contact from './components/Contact.vue';
 import DataImg from './components/DataImg.vue';
@@ -9,6 +10,10 @@ import Social from './components/Social.vue';
 import Cards from './components/media/Cards.vue'
 import Cube from './components/media/Cube.vue'
 import Map from './components/media/Map.vue'
+
+import Data1 from './components/headings/Data1.vue'
+import Data2 from './components/headings/Data2.vue'
+import Data3 from './components/headings/Data3.vue'
 </script>
 
 <template>
@@ -34,7 +39,7 @@ import Map from './components/media/Map.vue'
 
   <div class="home">
 
-    <DataImg header="Earn & claim cash with Reward.io by participating in real-time tasks and learning crypto."
+    <DataImg :header="Data1"
       text="Connect to our DEX service and contribute to earn crypto & cash seamlessly. Anyone can earn crypto by learning how to use blockchain products and completing real-time tasks."
       btnText="Get Started" imgSrc="../assets/vid.gif" sectionName="no-pb" :mediaComponent="Cube" />
     <div class="box">
@@ -47,10 +52,10 @@ import Map from './components/media/Map.vue'
   </div>
 
   <Banner />
-  <DataImg header="Participate with other users around the world with wide coverage for task."
+  <DataImg :header="Data2"
     text="Our platform reaches people all over the world, we will help you in growing your knowledge about the crypto space and earn at the same time. Complete quests to earn experience points, skill points and guild coin tokens."
     btnText="Play Now" :mediaComponent="Map" />
-  <DataImg header="A better and smarter wallet to help secure your earned tokens as you learn."
+  <DataImg :header="Data3"
     text="Our platform provides maximum security for our users through a safe transaction security, unique smart wallet card and embedded fintech experience to help you grow."
     btnText="Create Wallet" className="right" :mediaComponent="Cards" />
   <RewardTokens />
@@ -72,7 +77,7 @@ nav,
 nav {
   width: 100%;
   font-weight: bold;
-  padding: 0 4rem;
+  padding: 0 2.4rem;
 }
 
 .logo {
@@ -119,7 +124,7 @@ button {
 }
 
 .box {
-  padding: 1rem 4rem;
+  padding: 1rem 2.4rem;
 }
 
 .box span {

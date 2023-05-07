@@ -136,6 +136,4 @@ button {
   top: 5rem;
   right: 5rem;
 }
-
-.last {}
 </style>
