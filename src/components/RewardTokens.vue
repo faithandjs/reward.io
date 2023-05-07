@@ -62,7 +62,7 @@ section.with-cards {
 
 .cards {
   overflow: scroll;
-  padding: 0 4rem;
+  padding: 0 2.4rem;
   display: flex;
   gap: 20px;
   flex-wrap: nowrap;

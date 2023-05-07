@@ -18,17 +18,23 @@
 .container {
   position: relative;
   display: flex;
-  margin: auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
 }
 
 .box {
   position: absolute;
   width: 100%;
-  left: 0;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   gap: 25px;
+  justify-content: center;
+  /* margin-left: 40px; */
 }
 
 
