@@ -77,7 +77,7 @@ nav,
 nav {
   width: 100%;
   font-weight: bold;
-  padding: 0 2.4rem;
+  padding: 0 4rem;
 }
 
 .logo {
@@ -124,7 +124,18 @@ button {
 }
 
 .box {
-  padding: 1rem 2.4rem;
+  padding: 1rem 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .box {
+    padding: 1rem 2.4rem;
+  }
+
+  nav {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
 }
 
 .box span {
@@ -135,7 +146,6 @@ button {
 
 .box span img {
   animation: glow 3s ease-in infinite backwards;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
 .scroll {

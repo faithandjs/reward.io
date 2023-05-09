@@ -16,10 +16,29 @@ body {
   padding: 2.3rem 0rem;
   overflow-x: hidden;
 }
+
+body *::-webkit-scrollbar {
+  display: none;
+}
+
+body *::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body *::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: rgb(233, 230, 230);
+}
+
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: scroll;
     padding: 1rem 0rem;
+  }
+  section,
+  footer {
+    min-width: 1024px;
+    padding: 7rem 2.4rem;
   }
 }
 
@@ -43,7 +62,7 @@ p {
 section,
 footer {
   min-width: 1024px;
-  padding: 7rem 2.4rem;
+  padding: 7rem 4rem;
 }
 .btn {
   padding: 0.8rem 2rem;
