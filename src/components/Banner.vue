@@ -20,8 +20,6 @@ section {
   position: relative;
   padding: 0;
   overflow-x: clip;
-  /* height: 200px; */
-  /* overflow: hidden; */
 }
 
 .banner-style {
@@ -35,20 +33,18 @@ section {
   background-color: var(--color-purple-light);
 }
 
-.banner-bg {
+.band {
   padding: 3rem 4rem;
   background-color: var(--color-text);
   overflow: scroll;
-}
-
-.band {
-  display: flex;
-  gap: 20px;
   justify-content: space-between;
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 1024px) {
-  .banner-bg {
+  .band {
     padding: 2rem 1.4rem;
   }
 
