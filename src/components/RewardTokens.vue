@@ -57,7 +57,7 @@ import Tokens from './Tokens.vue'
 </script>
 <style scoped>
 section.with-cards {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .cards {

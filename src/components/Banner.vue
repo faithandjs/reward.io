@@ -18,11 +18,22 @@
 section {
   margin: 2rem 0;
   position: relative;
-  padding: 0;
+  padding: 0 !important;
   overflow-x: clip;
 }
 
 .banner-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 105%;
+  height: 150px;
+  transform: rotate(3deg) translate(-50%, -20%);
+  z-index: -1;
+  background-color: var(--color-purple-light);
+}
+
+/* .banner-style {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,7 +42,7 @@ section {
   z-index: -1;
   transform: rotate(3deg) translate(-50%, -20%);
   background-color: var(--color-purple-light);
-}
+} */
 
 .band {
   padding: 3rem 4rem;
@@ -49,7 +60,8 @@ section {
   }
 
   .banner-style {
-    display: none;
+    transform: rotate(3deg) translate(-50%, -30%);
+    /* display: none; */
   }
 }
 </style>
