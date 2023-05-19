@@ -78,6 +78,7 @@ nav {
   width: 100%;
   font-weight: bold;
   padding: 0 4rem;
+  min-width: 1024px;
 }
 
 .logo {
@@ -136,6 +137,12 @@ button {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
+
+  ul li {
+    margin: 0 .4rem;
+    padding: 0 .2rem;
+  }
+
 }
 
 .box span {
